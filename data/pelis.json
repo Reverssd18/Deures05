@@ -1,0 +1,16 @@
+[
+    {
+        "any_estrena": 2020,
+        "titol": "Film A",
+        "id_peli": 1,
+        "id_director": 1,
+        "durada": 120
+    },
+    {
+        "any_estrena": 2018,
+        "titol": "Film B",
+        "id_peli": 2,
+        "id_director": 2,
+        "durada": 110
+    }
+]

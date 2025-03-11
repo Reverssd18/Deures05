@@ -32,18 +32,18 @@ public class MainDB {
         int salZ = Cinema.afegirSala("Sala 2", 200, 2);
         System.out.println("S'ha afegit una nova sala amb id: " + salZ);
 
-        System.out.println("\nDirectors:");
-        Cinema.llistarTaulaDirectors();
+        // System.out.println("\nDirectors:");
+        // Cinema.llistarTaulaDirectors();
 
         System.out.println("\nPelis:");
         Cinema.llistarTaulaPelis();
 
-        System.out.println("\nSales:");
-        Cinema.llistarTaulaSales();
+        // System.out.println("\nSales:");
+        // Cinema.llistarTaulaSales();
 
-        int idPeli = 1;
-        System.out.println("\nInformació de la Peli: " + idPeli);
-        Cinema.llistarInfoPeli(idPeli);
+        // int idPeli = 1;
+        // System.out.println("\nInformació de la Peli: " + idPeli);
+        // Cinema.llistarInfoPeli(idPeli);
 
         // Tancar la connexió amb la base de dades (del singleton)
         db.close();
