@@ -1,8 +1,6 @@
 package com.exercici0501;
 
-import java.security.InvalidParameterException;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.io.IOException;
 
 public class Main {
 
@@ -14,16 +12,20 @@ public class Main {
         db.connect("./data/restaurants.sqlite");
 
         Restaurants.crearTaules();
-        Restaurants.loadData("./data/restaurants.json");
-
-        Restaurants.llistarTaulaRestautants();
-        Restaurants.llisarTaulaClients();
         try {
-            Restaurants.llistarTaulaServeis(-1);
-            Restaurants.llistarTaulaServeis(2);
-        } catch (InvalidParameterException e) {
+            Restaurants.loadData("./data/restaurants.json");
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // Restaurants.llistarTaulaRestautants();
+        // Restaurants.llisarTaulaClients();
+        // try {
+        //     Restaurants.llistarTaulaServeis(-1);
+        //     Restaurants.llistarTaulaServeis(2);
+        // } catch (InvalidParameterException e) {
+        //     e.printStackTrace();
+        // }
 
         db.close();
     }
